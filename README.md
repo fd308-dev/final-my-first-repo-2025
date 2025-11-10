@@ -13,7 +13,17 @@ Navigate to the repo using the command line.
 ``` sh
 cd ~/Documents/final-my-first-repo-2025
 ```
+## Configuration
+The stocks functionality requires an AlphaVantage API key. Obtain a premium AlphaVantage API Key (using the [form](https://www.alphavantage.co/support/#api-key) or shared by the prof).
 
+Create a local ".env" file and store your environment variable in there:
+
+
+```sh
+# this is the ".env" file...
+
+ALPHAVANTAGE_API_KEY="______________"
+```
 
 ## Usage
 Example Script:
@@ -72,12 +82,9 @@ Play a game of rock, paper scissors:
 python app/rps.py
 
 # if this file imports from other local py files:
-python -m app.rps
 Run the stocks dashboard:
 
 python -m app.stocks
-Tests
-Run the tests:
 
 # find all the tests and run them:
 pytest
