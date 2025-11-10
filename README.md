@@ -1,13 +1,57 @@
 # final-my-first-repo-2025
 
-Virtual Environment
-Create and activate a virtual environment:
+# My First Repo!
 
-conda create -n my-first-env-2025 python=3.11
+Learning and practicing version control!
 
-conda activate my-first-env-2025
-Packages
-Install packages:
+## Setup
+
+Clone the Repo to download it from GitHub. Perhaps onto the Desktop.
+
+Navigate to the repo using the command line.
+
+``` sh
+cd ~/Documents/final-my-first-repo-2025
+```
+
+
+## Usage
+Example Script:
+
+```sh
+python app/my_script.py
+```
+
+Game of Rock Paper Scissors:
+
+
+```sh
+python app/rps.py
+```
+Create a virtual environment:
+
+```sh
+conda create -n my-first-env-fall-2025 python=3.11
+```
+
+Activate the virtual environment:
+conda activate my-first-env-fall-2025
+```sh
+
+```
+
+Install package dependencies:
+
+```sh
+pip install -r requirements.txt
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
 
 # pip install pytest
 
