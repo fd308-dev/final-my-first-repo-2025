@@ -69,7 +69,7 @@ pytest
 
 pip install -r requirements.txt
 Secret Credentials
-For the stocks dashboard, you will need to acquire a "premium" AlphaVantage API key (from the prof) and supply it as an environment variable. Create a local ".env" file and place inside contents like the following:
+For the stocks dashboard, you will need to acquire a "premium" AlphaVantage API key (from the prof) and supply it as an environment variable. Create a local ".env" file and plafce inside contents like the following:
 
 # replace "demo" with your premium key:
 ALPHAVANTAGE_API_KEY="demo"
