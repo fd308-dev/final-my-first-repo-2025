@@ -3,6 +3,10 @@ python-dotenv
 pandas
 plotly
 
+# Web app:
+flask
+
+
 # packages used for testing:
 pytest
 
