@@ -10,6 +10,7 @@ rps_routes = Blueprint("rps_routes", __name__)
 @rps_routes.route("/rps/form")
 def form():
     print("RPS FORM...")
+    return render_template("rps_form.html")
 
 
 @rps_routes.route('/rps/results', methods=['POST'])
