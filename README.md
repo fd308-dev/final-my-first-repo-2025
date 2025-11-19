@@ -23,6 +23,8 @@ Create a local ".env" file and store your environment variable in there:
 # this is the ".env" file...
 
 ALPHAVANTAGE_API_KEY="______________"
+# also tell flask where our web app is defined:
+FLASK_APP=web_app
 ```
 
 ## Usage
@@ -67,9 +69,7 @@ pytest
 
 pip install -r requirements.txt
 Secret Credentials
-For the stocks dashboard, you will need to acquire a "premium" AlphaVantage API key (from the prof) and supply it as an environment variable. Create a local ".env" file and place inside contents like the following:
-
-# this is the ".env" file...
+For the stocks dashboard, you will need to acquire a "premium" AlphaVantage API key (from the prof) and supply it as an environment variable. Create a local ".env" file and plafce inside contents like the following:
 
 # Mac OS:
 FLASK_APP=web_app flask run
@@ -98,3 +98,20 @@ python -m app.stocks
 
 # find all the tests and run them:
 pytest
+
+### Web App
+
+Run the web app (then view in the browser at http://localhost:5000/):
+
+```sh
+ # if we have the FLASK_APP=web_app env var in the ".env" file:
+flask run
+```
+# Mac OS:
+FLASK_APP=web_app flask run
+
+# Windows OS: 
+# ... if `export` doesn't work for you, try `set` instead
+# ... or set FLASK_APP variable via ".env" file
+export FLASK_APP=web_app
+flask run
