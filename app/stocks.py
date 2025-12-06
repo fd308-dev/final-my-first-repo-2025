@@ -13,7 +13,7 @@ ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
 def format_usd(price):
     return f"${price:.2f}"
 
-def fetch_stocks_data(symbol):
+def fetch_stocks_csv(symbol):
     request_url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={ALPHAVANTAGE_API_KEY}&outputsize=full&datatype=csv"
     return read_csv(request_url)
 
@@ -21,7 +21,7 @@ def fetch_stocks_data(symbol):
 if __name__ == "__main__":
 
     selected_symbol = input("Please input a stock symbol (e.g. 'GOOGL'): ") or "GOOGL"
-    df = fetch_stocks_data(selected_symbol)
+    df = fetch_stocks_csv(selected_symbol)
     print(df.head())
 
     # todo: answer some questions about the data
