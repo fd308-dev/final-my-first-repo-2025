@@ -21,7 +21,7 @@ def fetch_stocks_data(symbol):
 if __name__ == "__main__":
 
     selected_symbol = input("Please input a stock symbol (e.g. 'GOOGL'): ") or "GOOGL"
-    df = fetch_stocks_csv(selected_symbol)
+    df = fetch_stocks_data(selected_symbol)
     print(df.head())
 
     # todo: answer some questions about the data
